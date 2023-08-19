@@ -82,11 +82,12 @@ function themNhanVien() {
 
         // hienThiSV(dssv.mangSV);
         setLocalStorage();
-        getLocalStorage()
+        getLocalStorage();
+        document.getElementById("btnDong").click();
     }
-
-
+    
 }
+document.getElementById("btnThemNV").onclick = themNhanVien;
 
 function setLocalStorage() {
     localStorage.setItem("DSNV_BT_1", JSON.stringify(dsnv.mangNV));
